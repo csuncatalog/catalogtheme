@@ -3,4 +3,76 @@
   Version: 1
   Description: A theme created for CSUN Catalog
 */
+html,
+body {
+  height: 100%;
+}
+.lgray{
+	background-color: #d1d2d4;
+}
 
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: -220px 0px -120px 0px;
+  padding: 220px 0px 120px 0px;
+}
+
+#footer {
+  height: 120px;
+  background-color: #d1d2d4;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav{
+    position: static;
+    float: left;
+    width: auto;
+    margin: 40px 15px 0px 15px;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+   .navbar-nav > li {
+    float: left;
+    margin-right: 20px;
+  }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 0px;
+  }
+}
+.logo{
+	height:80px;
+	width: 80px;
+	background-color: #d1d2d4;
+	margin: 0px 0px 0px 15px;
+}
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+}
+.center{
+	text-align: center;
+}
+.maintitle{
+	font-size: 22px;
+	color:#222222;
+	padding: 6px 0px 0px 0px;
+	margin:0px;
+}
+.maintitlebar{
+	background-color: #d1d2d4;
+	margin:0px;
+	padding:0px;
+	height: 40px;
+}
+.headbar{
+	height: 180px;
+	margin-bottom: 0px;
+}
+.contactblock{
+	margin: 10px 0px 0px 0px;
+}
