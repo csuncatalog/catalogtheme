@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 	<title><?php if(is_home()) bloginfo('name'); else wp_title(''); ?></title>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>">
