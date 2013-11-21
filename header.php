@@ -8,6 +8,3 @@
 	<?php wp_head();?>
 </head>
 <body>
-
-
-made some changes
