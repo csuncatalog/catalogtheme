@@ -11,6 +11,7 @@ body {
 	background-color: #d1d2d4;
 }
 
+
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -38,6 +39,14 @@ body {
     float: left;
     margin-right: 20px;
   }
+  @media (max-width: 433px){
+  	.navbar-nav > li {
+    float: left;
+    margin-right: 0px;
+  }
+
+  }
+
   .navbar-nav > li > a {
     padding-top: 15px;
     padding-bottom: 0px;
@@ -60,7 +69,7 @@ body {
 .maintitle{
 	font-size: 22px;
 	color:#222222;
-	padding: 6px 0px 0px 0px;
+	padding: 8px 0px 0px 0px;
 	margin:0px;
 }
 .maintitlebar{
@@ -69,7 +78,7 @@ body {
 	padding:0px;
 	height: 40px;
 }
-.headbar{
+#headbar{
 	height: 180px;
 	margin-bottom: 0px;
 }
