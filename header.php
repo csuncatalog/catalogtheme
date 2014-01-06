@@ -8,56 +8,72 @@
   <script type="text/javascript" src="bootstrap.min.js"></script>
 	<?php wp_head();?>
 </head>
+
+
 <body>
 
-<div class="navbar navbar-inverse" id="headbar">
-  <div class="container">
-    
- 	<div class="row">
-      		<div class="navbar">
+<div id="fixbar">
 
-      			<div class="nav logo col-xs-4"></div>
+  <div id="mininav">
+    <div class="iconblock">
+      <a href="#"><span class="glyphicon glyphicon-align-justify"></a>
+    </div> <!-- end menu iconblock -->
 
-      			<ul class="nav navbar-nav col-xs-8">
-        			<li ><a href="#">Majors</a></li>
-        			<li ><a href="#about">Minors</a></li>
-        			<li ><a href="#contact">Courses</a></li>
-      			</ul>
-    		</div><!--/.navbar-->
-	</div><!--  end row 1  -->
+    <div id="neglogo">
+      <img src="<?php bloginfo('template_directory'); ?> /img/negative-logo.png">
+    </div> <!-- end neglogo -->
 
-	<div class="row">
-		<!-- subnav icon -->
-		<div class="col-xs-3 col-sm-4">
-    		<button type="button" class="navbar-toggle pull-left">
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-        		<span class="icon-bar"></span>
-     		</button>
-     	</div>
+    <div class="iconblock">
+      <a href="#"><span class="glyphicon glyphicon-search right"></span></a>
+    </div><!-- end search iconblock -->
+  </div>
 
-     <!-- 	Search Bar -->
-      <div class="col-xs-9 col-sm-8 pull-right">
-        <form class="navbar-form" role="search">
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-            <div class="input-group-btn">
-              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
-            </div>
+  <div class="container" id="headerbar">
+      <div class="row">
+
+          <div class="col-sm-6">
+            <img src="<?php bloginfo('template_directory'); ?> /img/logo.png" id="logo">
           </div>
-        </form>
+
+
+          <div class="col-sm-6">
+
+            <div class="row" id="quicklinks">
+                <ul class="right">
+                    <li ><a href="#">Archives</a></li>
+                    <li ><a href="#">Quicklinks</a></li>
+                </ul>
+            </div>
+
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+      </div>   <!-- end row -->
+  </div>
+
+
+  <div id="csunnav">
+      <div class="container">
+      <ul class="nav navbar-nav">
+          <li ><a href="#">Home</a></li>
+          <li ><a href="#">Majors</a></li>
+          <li ><a href="#">Minors</a></li>
+          <li ><a href="#">Courses</a></li>
+          <li ><a href="#">General Education</a></li>
+          <li ><a href="#">Graduate Programs</a></li>
+      </ul>
       </div>
 
-  </div> <!-- end row 2 -->
+  </div> <!-- end csunnav -->
 
-   <!-- end row 3 -->
 
-  </div>
-</div>
 
-	<div class="row">
-		<div class="col-xs-12 maintitlebar">
-  			<h1 class="maintitle center">University Catalog 2014-2015</h1>
-  		</div>
-  	</div>
 
+</div> <!-- end fixbar -->

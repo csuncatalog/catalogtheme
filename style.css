@@ -6,82 +6,257 @@
 html,
 body {
   height: 100%;
+  background-color: #4e4e4e;
 }
-.lgray{
-	background-color: #d1d2d4;
+a{
+  color: white;
 }
-
-
+a:hover{
+  color: #d1d2d4;
+  text-decoration: none;
+}
+#fixbar{
+  position: fixed;
+  width: 100%;
+  height: 68px;
+  background-color: #990000;
+}
 #wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: -220px 0px -120px 0px;
-  padding: 220px 0px 120px 0px;
+  margin-bottom: -120px;
+  padding: 0px 0px 120px 0px;
+  background-color: #ffffff;
 }
 
 #footer {
   height: 120px;
-  background-color: #d1d2d4;
+  background-color: #1e1e1e;
 }
 
-@media (max-width: 767px) {
-  .navbar-nav{
-    position: static;
-    float: left;
-    width: auto;
-    margin: 40px 15px 0px 15px;
-    background-color: transparent;
-    border: 0;
-    box-shadow: none;
-  }
-   .navbar-nav > li {
-    float: left;
-    margin-right: 20px;
-  }
-  @media (max-width: 433px){
-  	.navbar-nav > li {
-    float: left;
-    margin-right: 0px;
-  }
-
-  }
-
-  .navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 0px;
-  }
+#logo{
+  margin-top: 25px;
+  width: 175px;
 }
-.logo{
-	height:80px;
-	width: 80px;
-	background-color: #d1d2d4;
-	margin: 0px 0px 0px 15px;
+
+
+#mininav {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
 }
-@media (min-width: 768px) {
-  .navbar-toggle {
+#neglogo {
+  width: 50%;
+  height: 38px;
+  margin-top: 14px;
+  display: inline-block;
+  float: left;
+}
+#neglogo > img{
+  position: relative;
+  max-height: 38px;
+  min-width: 115px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconblock{
+    position: relative;
+    height: 38px;
+    margin-top: 20px;
+    width: 25%;
+    min-width: 58px;
+    display: inline-block;
+    background-color: none;
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+#headerbar{
+  display: none;
+  position: relative;
+  height: 100%;
+  background-color: none;
+}
+
+
+/*nav*/
+#csunnav {
+    width: 100%;
+    background-color: #710100;
+    display: none;
+}
+#csunnav>.container{
+  height: 100%;
+  background-color: #990000;
+  margin: none;
+  padding: none;
+}
+.nav ul{
+  height: 100%;
+}
+.nav li { 
+  height: 100%;
+  display: inline-block; 
+  border-right: 1px solid #ffffff;
+}
+
+.nav>li>a {
+  height: 100%;
+  vertical-align: middle;
+}
+.nav li:last-child  { border: 0; 
+}
+
+
+.nav>li>a:hover {
+  background-color: #710100;
+}
+
+
+#quicklinks{
+  margin-top: 10px;
+  width: 100%;
+}
+
+#quicklinks>ul>li {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #181818;
+
+}
+
+#quicklinks>ul>li:last-child{
+  padding-right: 0px;
+  border: 0;
+}
+
+#quicklinks>ul>li>a {
+
+  color: #990000;
+
+
+}
+#quicklinks>ul>li>a:hover {
+  background-color: none;
+}
+
+/*banners*/
+.mainbanner {
+  display: block;
+  width: 100%;
+  height: 120px;
+  margin-top: 68px;
+  background-color: #c0c1c3;
+  border: 1px solid;
+  border-color: #4e4e4e;
+}
+
+.content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media (min-width: 768px) { /*small media size*/
+
+  #headerbar{
     display: block;
+    height: 100px;
+}
+  #mininav{
+    display: none;
+}
+
+  #fixbar{
+    background-color: #ffffff;
+    height: 145px;
+  }
+  #csunnav {
+    display: inline-block;
+    height: 45px;
+  }
+  .iconblock{
+    display: none;
+  }
+
+  .mainbanner {
+    height: 240px;
+    margin-top: 145px;
+  }
+
+}
+
+@media (min-width: 992px) { /*medium media size*/
+
+  #headerbar{
+    display: block;
+    height: 100px;
+}
+  #mininav{
+    display: none;
+}
+
+  #fixbar{
+    background-color: #ffffff;
+    height: 145px;
+  }
+  #csunnav {
+    display: inline-block;
+    height: 45px;
+  }
+  .iconblock{
+    display: none;
+  }
+
+  .mainbanner {
+    height: 270px;
+    margin-top: 145px;
+  }
+
+
+}
+
+@media (min-width: 1200px){ /*large media size*/
+
+  #headerbar{
+    display: block;
+    height: 140px;
+}
+  #mininav{
+    display: none;
+}
+  #fixbar{
+    background-color: #ffffff;
+    height: 200px;
+  }
+  #csunnav {
+    display: inline-block;
+    height: 60px;
+  }
+  .iconblock{
+    display: none;
+  }
+
+  .mainbanner {
+    height: 365px;
+    margin-top: 200px;
   }
 }
-.center{
-	text-align: center;
+
+
+
+
+/*general purpose stuff*/
+
+.right{
+  float: right;
 }
-.maintitle{
-	font-size: 22px;
-	color:#222222;
-	padding: 8px 0px 0px 0px;
-	margin:0px;
-}
-.maintitlebar{
-	background-color: #d1d2d4;
-	margin:0px;
-	padding:0px;
-	height: 40px;
-}
-#headbar{
-	height: 180px;
-	margin-bottom: 0px;
-}
-.contactblock{
-	margin: 10px 0px 0px 0px;
+.left{
+  float: left;
 }
