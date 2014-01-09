@@ -47,7 +47,7 @@
 
             <div class="row" id="quicklinks-lg">
                 <ul class="right">
-                    <li ><a href="#">Archives</a><div class="arrow-down"></div></li>
+                    <li ><a href="#">Downloads</a><div class="arrow-down"></div></li>
                     <li ><a href="#">Skip Nav</a></li>
                     <li ><a href="#">Accessibility</a></li>
                     <li ><a href="#">Calendar</a></li>

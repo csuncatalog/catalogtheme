@@ -13,7 +13,7 @@
 				<span class="sm-buffer"></span>
 
 				<div class="btnbox">
-					<span class="redbtn"><a href="#">Archives</a></span>
+					<span class="redbtn"><a href="#">Downloads</a></span>
 
 					<span class="redbtn"><a href="#">Feedback</a></span>
 				</div>
