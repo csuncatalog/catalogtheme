@@ -20,7 +20,7 @@
     </div> <!-- end menu iconblock -->
 
     <div id="neglogo">
-      <img src="<?php bloginfo('template_directory'); ?> /img/negative-logo.png">
+      <img src="<?php bloginfo('template_directory'); ?>/img/negative-logo.png">
     </div> <!-- end neglogo -->
 
     <div class="iconblock">
@@ -32,7 +32,7 @@
       <div class="row">
 
           <div class="col-sm-6">
-            <img src="<?php bloginfo('template_directory'); ?> /img/logo.png" id="logo">
+            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" id="logo">
           </div>
 
 
