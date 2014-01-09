@@ -20,7 +20,7 @@
     </div> <!-- end menu iconblock -->
 
     <div id="neglogo">
-      <img src="<?php bloginfo('template_directory'); ?>/img/negative-logo.png">
+      <img src="<?php bloginfo('template_directory'); ?> /img/negative-logo.png">
     </div> <!-- end neglogo -->
 
     <div class="iconblock">
@@ -31,38 +31,25 @@
   <div class="container" id="headerbar">
       <div class="row">
 
-          <div class="col-sm-6 col-lg-4">
-            <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" id="logo">
+          <div class="col-sm-6">
+            <img src="<?php bloginfo('template_directory'); ?> /img/logo.png" id="logo">
           </div>
 
 
-          <div class="col-sm-6 col-lg-8">
+          <div class="col-sm-6">
 
             <div class="row" id="quicklinks">
                 <ul class="right">
-                    <li ><a href="#">Archives</a><div class="arrow-down"></div></li>
-                    <li ><a href="#">Quicklinks</a><div class="arrow-down"></li>
-                </ul>
-            </div>
-
-            <div class="row" id="quicklinks-lg">
-                <ul class="right">
-                    <li ><a href="#">Archives</a><div class="arrow-down"></div></li>
-                    <li ><a href="#">Skip Nav</a></li>
-                    <li ><a href="#">Accessibility</a></li>
-                    <li ><a href="#">Calendar</a></li>
-                    <li ><a href="#">People Finder</a></li>
-                    <li ><a href="#">A to Z</a></li>
-                    <li ><a href="#">Webmail</a></li>
+                    <li ><a href="#">Archives</a></li>
+                    <li ><a href="#">Quicklinks</a></li>
                 </ul>
             </div>
 
             <form class="navbar-form" role="search">
-              <div class="input-group csunsearch">
+              <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                
                 <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit"><!-- <div class="arrow-left"></div> --><span class="glyphicon glyphicon-search"></span></button>
+                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
                 </div>
               </div>
             </form>
@@ -81,8 +68,6 @@
           <li ><a href="#">Courses</a></li>
           <li ><a href="#">General Education</a></li>
           <li ><a href="#">Graduate Programs</a></li>
-          <li ><a href="#">Archives</a></li>
-
       </ul>
       </div>
 
