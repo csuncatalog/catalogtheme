@@ -16,7 +16,7 @@
 
   <div id="mininav">
     <div class="iconblock">
-      <a href="#"><span class="glyphicon glyphicon-align-justify"></a>
+      <a href="#"><span class="glyphicon glyphicon-align-justify"></span></a>
     </div> <!-- end menu iconblock -->
 
     <div id="neglogo">
@@ -40,7 +40,6 @@
 
             <div class="row" id="quicklinks">
                 <ul class="right">
-                    <li ><a href="#">Archives</a><div class="arrow-down"></div></li>
                     <li ><a href="#">Quicklinks</a><div class="arrow-down"></li>
                 </ul>
             </div>
@@ -78,9 +77,9 @@
           <li ><a href="#">Home</a></li>
           <li ><a href="#">Majors</a></li>
           <li ><a href="#">Minors</a></li>
-          <li ><a href="#">Courses</a></li>
-          <li ><a href="#">General Education</a></li>
+          <li ><a href="#">Policies</a></li>
           <li ><a href="#">Graduate Programs</a></li>
+          <li ><a href="#">General Education</a></li>
           <li ><a href="#">Archives</a></li>
 
       </ul>
