@@ -4,7 +4,7 @@
 <div class="container" id="wrap">
 
 	<div class="mainbanner">
-		<img src="<?php bloginfo('template_directory'); ?>/img/shatter_r2.jpg">
+		<img src="<?php bloginfo('template_directory'); ?>/img/shatter_small.jpg">
 	</div>
 
 	<div class="content">

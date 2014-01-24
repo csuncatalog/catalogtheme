@@ -3,24 +3,37 @@
   Version: 1
   Description: A theme created for CSUN Catalog
 */
+
+
+
+
+
+/* Extra-Small Media Size ======================================================================================================*/
+
+/* 1 - Overall Rules */
+
 html,
 body {
   height: 100%;
   background-color: #4e4e4e;
 }
+
 a{
   color: white;
 }
+
 a:hover{
   color: #d1d2d4;
   text-decoration: none;
 }
+
 #fixbar{
   position: fixed;
   width: 100%;
   height: 68px;
   background-color: #990000;
 }
+
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -30,9 +43,151 @@ a:hover{
   background-color: #ffffff;
 }
 
+#logo{
+  margin-top: 25px;
+  width: 175px;
+}
+
+#neglogo {
+  width: 50%;
+  height: 38px;
+  margin-top: 14px;
+  display: inline-block;
+  float: left;
+}
+
+#neglogo > img{
+  position: relative;
+  max-height: 38px;
+  min-width: 115px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iconblock{
+    position: relative;
+    height: 38px;
+    margin-top: 20px;
+    width: 25%;
+    min-width: 58px;
+    display: inline-block;
+    background-color: none;
+    float: left;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#headerbar{
+  display: none;
+  position: relative;
+  height: 100%;
+  background-color: none;
+}
+
+/* 2 - Nav Rules */
+
+#mininav {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 280px;
+  display: block;
+}
+
+#menuicon, #searchicon {
+  cursor: pointer;
+
+}
+
+#csunnav {
+  width: 100%;
+  background-color: #181818;
+  z-index: 20;
+}
 
 
-/*Footer Rules =====================================================*/
+/* 3 - Quicklinks Rules */
+
+#quicklinks-lg{
+  display: none;
+}
+
+#quicklinks{
+  margin-top: 10px;
+  width: 100%;
+}
+
+#quicklinks>ul>li {
+  display: inline-block;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #181818;
+
+}
+
+#quicklinks>ul>li:last-child{
+  padding-right: 0px;
+  border: 0;
+}
+
+#quicklinks>ul>li>a {
+
+  color: #990000;
+
+
+}
+#quicklinks>ul>li>a:hover {
+  background-color: transparent;
+}
+/* 4 - Search Bar Rules */
+
+  #csunsearch {
+    background-color: #4e4e4e;
+    padding: 2px;
+  }
+
+  #csunsearch .form-control {
+
+      border-radius: 0px !important;
+      border-color: #ffffff;
+  }
+
+  #csunsearch .input-group-btn .btn {
+      border-radius: 0px !important;
+      background-color: #990000;
+      color: #ffffff;
+      border-color: #ffffff;
+  }
+
+  #csunsearch .input-group-btn .btn:hover {
+      background-color: #710100;
+
+  }
+  #csunsearch .input-group-btn .btn > .arrow-left{
+    margin-bottom:-20px;
+    margin-left: -20px;
+    background-color: ;
+  }
+
+/* 5 - Banner Rules */
+
+.mainbanner {
+  display: block;
+  margin-top: 68px;
+}
+
+.mainbanner > img {
+  max-width: 100%;
+}
+
+.content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* 6 - Footer Rules */
 #footer {
   background-color: #161616;
   padding: 30px 0px 30px 0px;
@@ -83,275 +238,173 @@ a:hover{
   text-align: center;
 }
 
-
-/*==================================================================*/
-
-#logo{
-  margin-top: 25px;
-  width: 175px;
+@media (max-width: 767px) { 
+  #csunnav {
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  background-color: #181818;
+  z-index: 20;
 }
 
+#csunsearch {
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  height: 50px;
+  background-color: #181818;
+  z-index: 20;    
+  }
 
-#mininav {
-  padding-left: 15px;
-  padding-right: 15px;
-  display: block;
-}
-#neglogo {
-  width: 50%;
-  height: 38px;
-  margin-top: 14px;
-  display: inline-block;
-  float: left;
-}
-#neglogo > img{
-  position: relative;
-  max-height: 38px;
-  min-width: 115px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.iconblock{
-    position: relative;
-    height: 38px;
-    margin-top: 20px;
-    width: 25%;
-    min-width: 58px;
-    display: inline-block;
-    background-color: none;
-    float: left;
-    font-size: 20px;
-    color: #ffffff;
-}
-
-
-#headerbar{
+.hideme {
   display: none;
-  position: relative;
-  height: 100%;
-  background-color: none;
+}
+
+.showme {
+  display: block;
+}
+
 }
 
 
-/*nav =========================================*/
-#csunnav {
+/*== END XS =======================*/
+
+/*SMALL MEDIA SIZE =================================================================================================================*/
+
+@media (min-width: 768px) { 
+
+/* 1 - Overall*/
+
+  #headerbar{
+    display: block;
+    height: 100px;
+  }
+
+
+  #fixbar{
+    background-color: #ffffff;
+    height: 145px;
+  }
+
+  .iconblock{
+    display: none;
+  }
+
+/* 2 - nav */
+
+  #mininav{
+    display: none;
+  }
+
+  #csunnav {
+    display: block;
+    height: 50px;
     width: 100%;
     background-color: #710100;
-    display: none;
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-}
+    padding: 0;
+  }
 
 
-#csunnav > .container {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-#csunnav > .container{
+  #csunnav > .container{
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #990000;
+  }
 
-  height: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
-  background-color: #990000;
-}
+  .nav {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    float: none;
+    text-align: center;
+    
+  }
 
-
-.nav ul{
-  height: 45px;
-}
-.nav li { 
-  height: 45px;
-  margin-top: 0px;
-  display: block; 
-}
-.nav {
-  height: 100%;
-  width: 100%;
-  display: block;
-}
-.nav li { 
-  height: 100%;
-  width: 14.285%;
-  display: inline-block; 
-
-  border-right: 1px solid #ffffff;
-  text-align: center;
-}
-
-.nav>li>a {
-  display: inline-block;
-  position: relative;
-  height: 20px;
-  line-height: 16px;
-  vertical-align: middle;
-  font-size: 16px;
-}
-.nav li:last-child  {
-  border: 0; 
-}
+  .nav li { 
+    display: inline-block;
 
 
-.nav>li:hover {
+  }
+
+  .nav > li > a {
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 0px 22px 0px 22px;
+    margin-top: 10px;
+    border-right: 1px solid #ffffff;
+  }
+
+  .nav  li:last-child > a {
+    border: 0;
+ 
+  }
+
+  .nav > li > a:hover {
     background-color: #710100;
   }
 
-  .nav>li>a:hover {
-    background-color: transparent !important;
-  }
-
-/*==========================================*/
-
-#quicklinks-lg{
-  display: none;
-}
-
-#quicklinks{
-  margin-top: 10px;
-  width: 100%;
-}
-
-#quicklinks>ul>li {
-  display: inline-block;
-  text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-right: 1px solid #181818;
-
-}
-
-#quicklinks>ul>li:last-child{
-  padding-right: 0px;
-  border: 0;
-}
-
-#quicklinks>ul>li>a {
-
-  color: #990000;
 
 
-}
-#quicklinks>ul>li>a:hover {
-  background-color: transparent;
-}
+/* 3 - Quicklinks Rules  */
 
-/*banners*/
-.mainbanner {
-  display: block;
-  margin-top: 68px;
-}
-.mainbanner > img {
-  max-width: 100%;
-}
-
-.content{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-@media (min-width: 768px) { /*SMALL MEDIA SIZE    ==============================================================================================*/
-
-  #headerbar{
-    display: block;
-    height: 100px;
-}
-  #mininav{
-    display: none;
-}
-
-  #fixbar{
-    background-color: #ffffff;
-    height: 145px;
-  }
-  #csunnav {
-    display: block;
-    height: 45px;
-  }
-
-  .iconblock{
-    display: none;
-  }
-
-  .mainbanner {
-    margin-top: 145px;
-  }
-
-  /*Search Bar Formatting*/
-  .csunsearch {
-    background-color: #4e4e4e;
-    padding: 2px;
-  }
-  .csunsearch .form-control {
-
-      border-radius: 0px !important;
-      border-color: #ffffff;
-  }
-
-  .csunsearch .input-group-btn .btn {
-
-      border-radius: 0px !important;
-      background-color: #990000;
-      color: #ffffff;
-      border-color: #ffffff;
-  }
-
-  .csunsearch .input-group-btn .btn:hover {
-      background-color: #710100;
-
-  }
-  .csunsearch .input-group-btn .btn > .arrow-left{
-    margin-bottom:-20px;
-    margin-left: -20px;
-    background-color: ;
-  }
-
-  /*---------------------*/
-
-/*Footer Rules =====================================================*/
-
-.footbox {
-  min-height: 100%;
-  height: 100%;
+/* 4 - Search Bar Rules  */
 
   
-  width: 50%;
-  display: block;
-  float: left;
-}
-
-.footbox > a {
-  text-align: left;
-}
-
-.footbox > span {
-  text-align: left;
-}
 
 
-/*==================================================================*/
+/*5 - Banner Rules*/
 
-}
+  .mainbanner {
+    margin-top: 145px;
+  }
 
-@media (min-width: 992px) { /*medium media size*/
+/*6 - Footer Rules*/
+
+  .footbox {
+    min-height: 100%;
+    height: 100%;
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+  .footbox > a {
+    text-align: left;
+  }
+
+  .footbox > span {
+    text-align: left;
+  }
+
+
+} /*== END SM =======================*/
+
+/*medium media size ===================================================================================================================*/
+
+@media (min-width: 992px) {
+
+/* 1 - Overall Rules */ 
 
   #headerbar{
     display: block;
     height: 100px;
-}
-  #mininav{
-    display: none;
-}
+  }
+
+
 
   #fixbar{
     background-color: #ffffff;
     height: 145px;
   }
-  #csunnav {
-    display: block;
-    height: 45px;
-  }
+
+
   .iconblock{
     display: none;
   }
@@ -360,89 +413,84 @@ a:hover{
     margin-top: 145px;
   }
 
-  /*Footer Rules =====================================================*/
-  .btnbox{
-  width: 424px;
-  margin: auto;
+/* 2 - Nav Rules*/
+
+  #mininav{
+    display: none;
+  }
+
+  #csunnav {
+    display: block;
+  }
+
+  .nav > li > a {
+    font-size: 16px;
+    padding: 0px 35px 0px 35px;
   }
 
 
+/* 3 - Footer Rules*/
 
-  /*==================================================================*/
+/* 4 - Footer Rules*/
+
+/* 5 - Footer Rules*/
+
+/* 6 - Footer Rules*/
+
+  .btnbox{
+    width: 424px;
+    margin: auto;
+  }
 
 
+} /*== END MD =======================*/
 
-}
+/* Large Media Size ==================================================================================================================*/
 
-@media (min-width: 1200px){ /*large media size*/
+@media (min-width: 1200px){
+
+/* 1 - Overall Rules */
 
   #headerbar{
     display: block;
     height: 140px;
-}
-  #mininav{
-    display: none;
-}
+  }
+
   #fixbar{
     background-color: #ffffff;
-    height: 200px;
+    height: 195px;
   }
-  #csunnav {
-    display: block;
-    height: 60px;
-  }
+
   .iconblock{
     display: none;
   }
 
-  .mainbanner {
-    margin-top: 200px;
-  }
-
-  #quicklinks{
-  margin-top: 20px;
-  }
 
   #logo{
   margin-top: 55px;
   }
 
-  /*nav   ==========================================================*/
-  .nav ul{
-    display: block;
-    width: 100%;
-    height: 60px;
-  }
-  .nav li { 
-    height: 60px;
-    margin-top: 0px;
-    display: block;
-    text-align: center; 
-    border-right: 1px solid #ffffff;
-    vertical-align: middle;
+/* 2 - Nav Rules */
+
+  #mininav{
+    display: none;
   }
 
-  .nav>li>a {
-    margin-left: 38px;
-    margin-right: 38px;
-    height: 60px;
-    line-height: 30px;
-    vertical-align: middle;
-    font-size: 16px;
-    text-align: center;
-  }
-  .nav li:first-child  { 
-
-  }
-  .nav li:last-child  { 
-    border: 0; 
+  #csunnav {
+    height: 55px;
   }
 
-  
 
-  /*==================================================================*/
+  .nav > li > a {
+    line-height: 32px;
+    padding: 0px 48px 0px 48px;
+  }
+
+
+/* 3 - Quicklinks Rules*/
 
   #quicklinks{
+    margin-top: 20px;
     display: none;
   }
 
@@ -472,17 +520,30 @@ a:hover{
 
 
   }
+
   #quicklinks-lg>ul>li>a:hover {
   background-color: transparent;
   }
 
+/* 4 - Search Bar Rules*/
 
-}
+/* 5 - Banner Rules*/
+
+  .mainbanner {
+    margin-top: 195px;
+  }
+
+/* 6 - Footer Rules*/
+
+
+} /*== END LG =======================*/
 
 
 
 
-/*general purpose stuff*/
+
+
+/*Miscellaneous Stuff ===================================================================================================================*/
 
 .sm-buffer{
   display: block;
@@ -493,17 +554,21 @@ a:hover{
 .right{
   float: right;
 }
+
 .left{
   float: left;
 }
+
 .red{
   color: #990000;
 }
+
 .bold{
   font-weight: bold;
 }
 
-/* Triangles */
+/*Triangles*/
+
 .arrow-up {
   width: 0; 
   height: 0; 
@@ -514,7 +579,6 @@ a:hover{
 }
 
 .arrow-down {
-
   display: inline-block;
   width: 0; 
   height: 0; 
@@ -528,7 +592,6 @@ a:hover{
 .arrow-down:hover {
   border-top: 8px solid #990000;
   cursor: pointer;
-
 }
 
 .arrow-right {
@@ -544,7 +607,8 @@ a:hover{
   width: 0; 
   height: 0; 
   border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent; 
-  
+  border-bottom: 10px solid transparent;  
   border-right:10px solid blue; 
 }
+
+
