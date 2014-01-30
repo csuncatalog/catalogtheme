@@ -8,6 +8,9 @@
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/custom.js"></script>
+
+  <script type="text/javascript" src="//use.typekit.net/gfb2mjm.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<?php wp_head();?>
 </head>
 
