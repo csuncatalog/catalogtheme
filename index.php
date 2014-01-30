@@ -57,7 +57,7 @@
 			if( $the_query->have_posts() ) : while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
 		<div class="dept-item col-xs-12 col-sm-6 col-md-4 col-lg-3">
-			<a href="#"><?php the_title(); ?></a>
+			<a href="<?php bloginfo('url'); ?>/department"><?php the_title(); ?></a>
 		</div>
 
 

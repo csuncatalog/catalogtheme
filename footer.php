@@ -1,8 +1,11 @@
 
 
 
+<div class="row">
 
 		<div class="container" id="footer">
+
+			<div class="content clearfix">
 
 			<div class="footbox ">
 				<span class="bold">California State University, Northridge</span>
@@ -32,9 +35,10 @@
 				<a href="#"><span class="red"> >> </span>Mission Statement</a>
 			</div>
 
-
+			</div>
 
 		</div> 
+</div>
 		<?php wp_footer();?>
 </body>
 </html>

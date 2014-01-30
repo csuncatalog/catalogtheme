@@ -80,7 +80,7 @@
   <div id="csunnav" class="hideme">
       <div class="container">
       <ul class="nav">
-          <li ><a href="#">Home</a></li>
+          <li ><a href="<?php bloginfo('url'); ?>">Home</a></li>
           <li ><a href="#">Majors</a></li>
           <li ><a href="#">Minors</a></li>
           <li ><a href="#">Courses</a></li>

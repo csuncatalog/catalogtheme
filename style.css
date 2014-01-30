@@ -14,12 +14,30 @@
 
 html,
 body {
+  font-family: museo-sans, helvetica, arial, sans-serif;
   height: 100%;
   background-color: #4e4e4e;
 }
 
 a{
   color: white;
+}
+
+h1, h2, h3, h4, h5{
+  font-family: museo-sans, helvetica, arial, sans-serif;
+  color: #990000;
+}
+h1{
+  font-size: 30px;
+}
+h3 {
+  font-size: 18px;
+}
+
+p {
+  color: #727272;
+  font-size: 14px;
+  line-height: 26px;
 }
 
 a:hover{
@@ -197,12 +215,18 @@ a:hover{
   padding: 30px 0px 30px 0px;
 }
 
-.footbox {
-  padding: 20px;
+#footer .content {
   background-color: #1e1e1e;
+  border-bottom: 1px solid #3b3b3b;
+
+}
+
+.footbox {
+  display: block;
+  padding: 20px;
   color: #ffffff;
   line-height: 30px;
-  border-bottom: 1px solid #3b3b3b;
+
 }
 
 .footbox > a {
@@ -244,30 +268,55 @@ a:hover{
 
 /* 7 - Inner Page*/
 
-#catalog-subnav ul li {
-  display: block;
+#catalog-subnav ul{
+  padding-left: 0;
 }
 
-#catalog-subnav ul li ul{
-  padding-left: 15px;
+#catalog-subnav ul li {
+  width: 100%;
+  display: table;
 }
 
 #catalog-subnav ul li a {
+  display: block;
+  float: left;
+  width: 100%;
   font-size: 18px;
   color: #727272;
-  display: block;
   border: solid 1px #cacaca;
+  border-right: solid 8px #cacaca;
   padding: 10px 10px 10px 10px;
 }
+
+#catalog-subnav ul li.active a {
+  border-right: solid 8px #990000;
+}
+
+
+
+#catalog-subnav ul li ul li a{
+    width: 90%;
+
+}
+
+.indent{
+  display: block;
+  float: left;
+  width: 10%;
+  min-height: 20px;
+  height: 100%;
+}
+
 
 .breadcrumb {
   font-size: 24px;
   color: #990000;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 .breadcrumb > span {
-  color: #444;
+  color: #848484;
 }
 
 .dept-container{
@@ -300,6 +349,10 @@ a:hover{
 .land-bg{
   max-width: 100%;
 }
+.land-head{
+  color: #1e1e1e;
+  font-family: museo, helvetica, arial, sans-serif;
+}
 
 .landing-over {
   width: 100%;
@@ -326,13 +379,14 @@ a:hover{
 }
 
 .section-content {
-  padding: 0px 15px 10px 15px;
+  padding: 0px 20px 10px 20px;
+  margin-bottom: 20px;
 }
 
 .section-title {
   display: block;
   width: 100%;
-  height: 35px;
+  padding-bottom: 6px;
   border-bottom: solid 4px #cecfd1;
   margin-bottom: 10px;
 }
@@ -344,10 +398,11 @@ a:hover{
 }
 
 .section-title span {
-  display: table;
+  display: inline;
+  padding-bottom: 8px;
   min-width: 10%;
   max-width: 90%;
-  height: 35px;
+  height: 100%;
   border-bottom: solid 4px #990000
 
 }

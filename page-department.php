@@ -18,31 +18,36 @@ get_header(); ?>
 		</div>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<h1 class="breadcrumb">Department Name <span> > Department Page Template</span></h1>
+			<div class="section-content">
+				<h1 class="breadcrumb">Department Name <span> > Department</span></h1>
+			</div>
 		</div>
+
 	</div>
 
 <div class="row">
-	<div id="catalog-subnav"class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+	<div id="catalog-subnav"class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="section-content">
 		<ul>
-			<li><a href="#">Department</a></li>
+			<li class="active"><a href="<?php bloginfo('url'); ?>/department">Department</a></li>
 			<li><a href="#">Programs</a>
 				<ul>
-					<li><a href="#">Program One</a>
-					<li><a href="#">Program Two</a>
-					<li><a href="#">Program Three</a>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program One</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Two</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Three</a></li>
 				</ul>
 
 			</li>
 			<li><a href="#">Faculty</a></li>
 			<li><a href="#">Courses</a></li>
 		</ul>
+		</div>
 	</div>
 
-	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
 		<div class="section-content">
 			<span class="section-title"><span><h3>Mission Statement</h3></span></span> 
-			<span><?php the_field('mission_statement'); ?></span>
+			<p><?php the_field('mission_statement'); ?></p>
 		</div>
 	</div>
 </div>
@@ -51,14 +56,14 @@ get_header(); ?>
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 		<div class="section-content">
 			<span class="section-title"><span><h3>Careers</h3></span></span> 
-			<span><?php the_field('careers'); ?></span>
+			<p><?php the_field('careers'); ?></p>
 		</div>
 	</div>
 
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
 		<div class="section-content">
 			<span class="section-title"><span><h3>Clubs and Societies</h3></span></span> 
-			<span><?php the_field('clubs_&_societies'); ?></span>
+			<p><?php the_field('clubs_&_societies'); ?></p>
 		</div>		
 	</div>
 </div>
@@ -67,14 +72,14 @@ get_header(); ?>
 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 		<div class="section-content">
 			<span class="section-title"><span><h3>Overview</h3></span></span> 
-			<span><?php the_field('overview'); ?></span>
+			<p><?php the_field('overview'); ?></p>
 		</div>
 	</div>
 
 	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 		<div class="section-content">
 			<span class="section-title"><span><h3>Contact</h3></span></span> 
-			<span><?php the_field('contact'); ?></span>
+			<p><?php the_field('contact'); ?></p>
 		</div>
 	</div>
 </div>
