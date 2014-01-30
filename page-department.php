@@ -8,6 +8,9 @@ get_header(); ?>
 
 <div class="container" id="wrap">
 
+	<?php if(have_posts()): while (have_posts()) : the_post(); ?>
+	
+
 	<div class="row">
 
 		<div class="mainbanner">
@@ -37,46 +40,61 @@ get_header(); ?>
 	</div>
 
 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-		<h3>Mission Statement</h3>
-		<span>Mission Statement Here</span>
+		<div class="section-content">
+			<span class="section-title"><span><h3>Mission Statement</h3></span></span> 
+			<span><?php the_field('mission_statement'); ?></span>
+		</div>
 	</div>
 </div>
 
+<div class="row">
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-		<h3>Careers</h3>
-		<span>Careers Here</span>
+		<div class="section-content">
+			<span class="section-title"><span><h3>Careers</h3></span></span> 
+			<span><?php the_field('careers'); ?></span>
+		</div>
 	</div>
 
 	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-		<h3>Clubs and Societies</h3>
-		<span>Clubs and Societies Here</span>
+		<div class="section-content">
+			<span class="section-title"><span><h3>Clubs and Societies</h3></span></span> 
+			<span><?php the_field('clubs_&_societies'); ?></span>
+		</div>		
 	</div>
+</div>
 
+<div class="row">
 	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-		<h3>Overview</h3>
-		<span>Overview Here</span>
+		<div class="section-content">
+			<span class="section-title"><span><h3>Overview</h3></span></span> 
+			<span><?php the_field('overview'); ?></span>
+		</div>
 	</div>
 
 	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-		<h3>Contact</h3>
-		<span>Contact Here</span>
+		<div class="section-content">
+			<span class="section-title"><span><h3>Contact</h3></span></span> 
+			<span><?php the_field('contact'); ?></span>
+		</div>
 	</div>
+</div>
 
 
 
-	<!-- <div class="content">
 
-		<?php if(have_posts()): while (have_posts()) : the_post(); ?>
 
-		<h1><?php the_title(); ?></h1>
-		<p><?php the_content(); ?></p>
+
+
+<!-- 		<h1><?php the_title(); ?></h1>
+		<p><?php the_content(); ?></p> -->
 
 		<?php endwhile; else: ?>
   		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
 		<?php endif; ?>
-	</div> -->
+
 
 </div>
+
 
 
 <?php get_footer(); ?>
