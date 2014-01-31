@@ -6,13 +6,12 @@
 
 get_header(); ?>
 
-<div class="container">
+<div class="container" id="wrap">
+	<div class="mainbanner">
+		<img src="<?php bloginfo('template_directory'); ?>/img/shatter_r2.jpg">
+	</div>
 
-			<div id="content">
-
-				<div id="inner-content" class="wrap clearfix">
-
-					<div id="main" class="clearfix" role="main">
+					<div id="main" class="content" role="main">
 
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -66,11 +65,6 @@ get_header(); ?>
 
 					</div> <!-- end #main -->
 
-					<?php get_sidebar(); ?>
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
 
 		</div> <!-- end .container -->
 
