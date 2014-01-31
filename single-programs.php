@@ -1,90 +1,109 @@
-<?php
+<?php 
 
 /**
  * Template Name: Programs Single View
  */
-
+ 
 get_header(); ?>
 
-<div class="container">
+<div class="container" id="wrap">
 
-			<div id="content">
+	<?php if(have_posts()): while (have_posts()) : the_post(); ?>
+	
 
-				<div id="inner-content" class="wrap clearfix">
+	<div class="row">
 
-					<div id="main" class="clearfix" role="main">
+		<div class="mainbanner">
+			<img src="<?php bloginfo('template_directory'); ?>/img/shatter_small.jpg">
+		</div>
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="section-content">
+				<span class="breadcrumb">Department Name <span> > Programs</span><span> > Program Name</span></span>
+			</div>
+		</div>
 
-						<?php if (function_exists("builder_breadcrumb_lists")) { ?>
-							<?php builder_breadcrumb_lists(); ?>
-							<?php } ?>
+	</div>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="row">
+	<div id="catalog-subnav"class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="section-content">
+		<ul>
+			<li><a href="<?php bloginfo('url'); ?>/department">Department</a></li>
+			<li><a href="#">Programs</a>
+				<ul>
+					<li class="active" ><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program One</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Two</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Three</a></li>
+				</ul>
 
-								<header class="article-header">
+			</li>
+			<li><a href="#">Faculty</a></li>
+			<li><a href="#">Courses</a></li>
+		</ul>
+		</div>
+	</div>
 
-									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); 
-												echo ', ';
-												the_field('degree_type');
-									?></h1>
-									<?php pdf_all_button(); ?>
-									<?php pdf_fouryear_button(); ?>
-									<?php pdf_star_button(); ?>
-								</header> <!-- end article header -->
+	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Overview</h3></span></span> 
+			<p><?php the_content(); ?></p>
+		</div>
+	</div>
+</div>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content();?>
-									<h2>Requirements</h2>
-									<?php the_field('program_requirements');?>
-									<h2>SLOs</h2>
-									<?php the_field('slos');?>
-									<div class="four-year">
-										<h2>Four Year Plan</h2>
-										<?php the_field('degree_plan');?>
-									</div>
-									<div class="star">
-										<h2>STAR Act</h2>
-										<?php the_field('star_act');?>
-									</div>
-								</section> <!-- end article section -->
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Program Options</h3></span></span> 
+			<p>Delete Me</p>
+		</div>
+	</div>
 
-								<footer class="article-footer">
-									<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '</p>' ); ?>
+	<div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Program Requirements</h3></span></span> 
+			<p><?php the_field('program_requirements'); ?></p>
+		</div>		
+	</div>
 
-								</footer> <!-- end article footer -->
+	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<div class="section-content col-sm-6 col-md-12 col-lg-12 ">
+			<span class="section-title"><span><h3>Student Learning Outcomes</h3></span></span> 
+			<p><?php the_field('slos'); ?></p>
+		</div>
 
-								<?php comments_template(); ?>
+		<div class="section-content col-sm-6 col-md-12 col-lg-12">
+			<span class="section-title"><span><h3>4 Year Plans</h3></span></span> 
+			<p><?php the_field('degree_plan'); ?></p>
+		</div>	
 
-							</article> <!-- end article -->
+		<div class="section-content col-sm-6 col-md-12 col-lg-12">
+			<span class="section-title"><span><h3>STAR Act</h3></span></span> 
+			<p><?php the_field('star_act'); ?></p>
+		</div>
 
-						<?php endwhile; ?>
+		<div class="section-content col-sm-6 col-md-12 col-lg-12">
+			<span class="section-title"><span><h3>Contact</h3></span></span> 
+			<p><?php the_field('contact'); ?></p>
+		</div>		
 
-						<?php else : ?>
+	</div>
+</div>
 
-							<article id="post-not-found" class="hentry clearfix">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
 
-						<?php endif; ?>
 
-					</div> <!-- end #main -->
 
-					<?php get_sidebar(); ?>
 
-				</div> <!-- end #inner-content -->
+<!-- 		<h1><?php the_title(); ?></h1>
+		<p><?php the_content(); ?></p> -->
 
-			</div> <!-- end #content -->
+		<?php endwhile; else: ?>
+  		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+		<?php endif; ?>
 
-		</div> <!-- end .container -->
+
+</div>
+
 
 <?php get_footer(); ?>
-

@@ -1,77 +1,106 @@
 <?php 
-
 /**
  * Template Name: Department Single View
- */
+ */ 
 
 get_header(); ?>
 
-<div class="container">
 
-			<div id="content">
 
-				<div id="inner-content" class="wrap clearfix">
+<div class="container" id="wrap">
 
-					<div id="main" class="clearfix" role="main">
+	<?php if(have_posts()): while (have_posts()) : the_post(); ?>
+	
 
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+	<div class="row">
 
-						<?php if (function_exists("builder_breadcrumb_lists")) { ?>
-							<?php builder_breadcrumb_lists(); ?>
-							<?php } ?>
+		<div class="mainbanner">
+			<img src="<?php bloginfo('template_directory'); ?>/img/shatter_small.jpg">
+		</div>
 
-							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="section-content">
+				<span class="breadcrumb">Department Name <span> > Department</span></span>
+			</div>
+		</div>
 
-								<header class="article-header">
-									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<?php pdf_all_button(); ?>
-								</header> <!-- end article header -->
+	</div>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<h2>Mission</h2>
-									<?php the_field('mission_statement');?>
-									<h2>Academic Advisement</h2>
-									<?php the_field('academic_advisement');?>
-									<h2>Careers</h2>
-									<?php the_field('careers');?>
-									<h2>Student Organizations</h2>
-									<?php the_field('student_orgs');?>
-									<?php the_content(); ?>
-								</section> <!-- end article section -->
+<div class="row">
+	<div id="catalog-subnav"class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+		<div class="section-content">
+		<ul>
+			<li class="active"><a href="<?php bloginfo('url'); ?>/department">Department</a></li>
+			<li><a href="#">Programs</a>
+				<ul>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program One</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Two</a></li>
+					<li><span class="indent"></span><a href="<?php bloginfo('url'); ?>/program">Program Three</a></li>
+				</ul>
 
-								<footer class="article-footer">
-									<?php the_tags( '<p class="tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ' ', '</p>' ); ?>
+			</li>
+			<li><a href="#">Faculty</a></li>
+			<li><a href="#">Courses</a></li>
+		</ul>
+		</div>
+	</div>
 
-								</footer> <!-- end article footer -->
+	<div class="col-xs-12 col-sm-6 col-md-8 col-lg-8">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Mission Statement</h3></span></span> 
+			<p><?php the_field('mission_statement'); ?></p>
+		</div>
+	</div>
+</div>
 
-							</article> <!-- end article -->
+<div class="row">
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Careers</h3></span></span> 
+			<p><?php the_field('careers'); ?></p>
+		</div>
+	</div>
 
-						<?php endwhile; ?>
+	<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Clubs and Societies</h3></span></span> 
+			<p><?php the_field('student_orgs'); ?></p>
+		</div>		
+	</div>
+</div>
 
-						<?php else : ?>
+<div class="row">
+	<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Overview</h3></span></span> 
+			<p><?php the_content(); ?></p>
+		</div>
+	</div>
 
-							<article id="post-not-found" class="hentry clearfix">
-									<header class="article-header">
-										<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-									</header>
-									<section class="entry-content">
-										<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-									</section>
-									<footer class="article-footer">
-											<p><?php _e( 'This is the error message in the single.php template.', 'bonestheme' ); ?></p>
-									</footer>
-							</article>
+	<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+		<div class="section-content">
+			<span class="section-title"><span><h3>Contact</h3></span></span> 
+			<p><?php the_field('contact'); ?></p>
+		</div>
+	</div>
+</div>
 
-						<?php endif; ?>
 
-					</div> <!-- end #main -->
 
-					<?php get_sidebar(); ?>
 
-				</div> <!-- end #inner-content -->
 
-			</div> <!-- end #content -->
 
-		</div> <!-- end .container -->
+
+<!-- 		<h1><?php the_title(); ?></h1>
+		<p><?php the_content(); ?></p> -->
+
+		<?php endwhile; else: ?>
+  		<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+		<?php endif; ?>
+
+
+</div>
+
+
 
 <?php get_footer(); ?>
