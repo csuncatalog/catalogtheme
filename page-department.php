@@ -19,7 +19,7 @@ get_header(); ?>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="section-content">
-				<h1 class="breadcrumb">Department Name <span> > Department</span></h1>
+				<span class="breadcrumb">Department Name <span> > Department</span></span>
 			</div>
 		</div>
 

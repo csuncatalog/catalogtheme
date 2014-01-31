@@ -5,9 +5,6 @@
 */
 
 
-
-
-
 /* Extra-Small Media Size ======================================================================================================*/
 
 /* 1 - Overall Rules */
@@ -17,6 +14,7 @@ body {
   font-family: museo-sans, helvetica, arial, sans-serif;
   height: 100%;
   background-color: #4e4e4e;
+  background-image: url('img/shattered-dark.png');
 }
 
 a{
@@ -41,7 +39,7 @@ p {
 }
 
 a:hover{
-  color: #d1d2d4;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -311,8 +309,9 @@ a:hover{
 .breadcrumb {
   font-size: 24px;
   color: #990000;
-  background-color: #ffffff;
-  text-transform: uppercase;
+  background-color: transparent;
+  display: block;
+  margin-top: 20px;
 }
 
 .breadcrumb > span {
@@ -438,6 +437,9 @@ a:hover{
 /* 7 - Inner Page*/
 
 .breadcrumb {
+  display: block;
+  margin-top: 20px;
+  background-color: transparent;
   font-size: 16px;
 }
 
@@ -521,7 +523,7 @@ a:hover{
   }
 
   .nav li:hover { 
-    background-color: #710100; 
+    background-color: #1e1e1e; 
   }
 
   .nav > li > a {
@@ -541,7 +543,7 @@ a:hover{
   }
 
   .nav > li > a:hover {
-    background-color: #710100;
+    background-color: #1e1e1e;
   }
 
 
