@@ -3,25 +3,56 @@
   Version: 1
   Description: A theme created for CSUN Catalog
 */
+
+
+/* Extra-Small Media Size ======================================================================================================*/
+
+/* 1 - Overall Rules */
+
 html,
 body {
+  font-family: museo-sans, helvetica, arial, sans-serif;
   height: 100%;
   background-color: #4e4e4e;
+  background-image: url('img/shattered-dark.png');
 }
+
 a{
   color: white;
 }
+
+h1, h2, h3, h4, h5{
+  font-family: museo-sans, helvetica, arial, sans-serif;
+  color: #990000;
+}
+h1{
+  font-size: 30px;
+}
+h3 {
+  font-size: 18px;
+}
+
+p {
+  color: #727272;
+  font-size: 14px;
+  line-height: 26px;
+}
+
 a:hover{
-  color: #d1d2d4;
+  color: #ffffff;
   text-decoration: none;
 }
+
 #fixbar{
   top:0px;
   position: fixed;
   width: 100%;
   height: 68px;
   background-color: #990000;
+  display: block;
+  z-index: 100;
 }
+
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -32,6 +63,7 @@ a:hover{
   margin-top:-32px;
 }
 
+<<<<<<< HEAD
 #footer {
   height: 120px;
   background-color: #1e1e1e;
@@ -40,14 +72,12 @@ a:hover{
 #logo{
   margin-top: 25px;
   width: 175px;
+=======
+#logo{
+  margin-top: 25px;
+  width: 175px;
 }
 
-
-#mininav {
-  padding-left: 15px;
-  padding-right: 15px;
-  display: block;
-}
 #neglogo {
   width: 50%;
   height: 38px;
@@ -55,6 +85,7 @@ a:hover{
   display: inline-block;
   float: left;
 }
+
 #neglogo > img{
   position: relative;
   max-height: 38px;
@@ -77,7 +108,6 @@ a:hover{
     color: #ffffff;
 }
 
-
 #headerbar{
   display: none;
   position: relative;
@@ -85,40 +115,33 @@ a:hover{
   background-color: none;
 }
 
+/* 2 - Nav Rules */
 
-/*nav*/
+#mininav {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-width: 280px;
+  display: block;
+
+}
+
+#menuicon, #searchicon {
+  cursor: pointer;
+
+}
+
 #csunnav {
-    width: 100%;
-    background-color: #710100;
-    display: none;
-}
-#csunnav>.container{
-  height: 100%;
-  background-color: #990000;
-  margin: none;
-  padding: none;
-}
-.nav ul{
-  height: 100%;
-}
-.nav li { 
-  height: 100%;
-  display: inline-block; 
-  border-right: 1px solid #ffffff;
-}
-
-.nav>li>a {
-  height: 100%;
-  vertical-align: middle;
-}
-.nav li:last-child  { border: 0; 
+  width: 100%;
+  background-color: #181818;
+  z-index: 20;
 }
 
 
-.nav>li>a:hover {
-  background-color: #710100;
-}
+/* 3 - Quicklinks Rules */
 
+#quicklinks-lg{
+  display: none;
+}
 
 #quicklinks{
   margin-top: 10px;
@@ -146,6 +169,328 @@ a:hover{
 
 }
 #quicklinks>ul>li>a:hover {
+  background-color: transparent;
+}
+/* 4 - Search Bar Rules */
+
+  #csunsearch {
+    background-color: #4e4e4e;
+    padding: 2px;
+  }
+
+  #csunsearch .form-control {
+
+      border-radius: 0px !important;
+      border-color: #ffffff;
+  }
+
+  #csunsearch .input-group-btn .btn {
+      border-radius: 0px !important;
+      background-color: #990000;
+      color: #ffffff;
+      border-color: #ffffff;
+  }
+
+  #csunsearch .input-group-btn .btn:hover {
+      background-color: #710100;
+
+  }
+  #csunsearch .input-group-btn .btn > .arrow-left{
+    margin-bottom:-20px;
+    margin-left: -20px;
+    background-color: ;
+  }
+
+/* 5 - Banner Rules */
+
+.mainbanner {
+  display: block;
+  margin-top: 68px;
+}
+
+.mainbanner > img {
+  max-width: 100%;
+  padding: 0;
+}
+
+.content{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+/* 6 - Footer Rules */
+#footer {
+  background-color: #161616;
+  padding: 30px 0px 30px 0px;
+}
+
+#footer .content {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #3b3b3b;
+
+}
+
+.footbox {
+  display: block;
+  padding: 20px;
+  color: #ffffff;
+  line-height: 30px;
+
+}
+
+.footbox > a {
+  text-align: center;
+  display: block;
+}
+
+.footbox > span {
+  text-align: center;
+  display: block;
+}
+
+.btnbox{
+  width: 212px;
+  margin: auto;
+}
+
+.redbtn{
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background-color: #990000;
+  margin: 10px 20px 10px 20px;
+  border: 1px solid #3b3b3b;
+  padding: 10px;
+}
+
+.redbtn:hover{
+  background-color: #710100;
+}
+
+.redbtn > a {
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+/* 7 - Inner Page*/
+
+#catalog-subnav ul{
+  padding-left: 0;
+>>>>>>> origin/Safety-Branch
+}
+
+#catalog-subnav ul li {
+  width: 100%;
+  display: table;
+}
+
+#catalog-subnav ul li a {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  color: #727272;
+  border: solid 1px #cacaca;
+  border-right: solid 8px #cacaca;
+  padding: 10px 10px 10px 10px;
+}
+
+#catalog-subnav ul li.active a {
+  border-right: solid 8px #990000;
+}
+
+
+
+#catalog-subnav ul li ul li a{
+    width: 90%;
+
+}
+
+.indent{
+  display: block;
+  float: left;
+  width: 10%;
+  min-height: 20px;
+  height: 100%;
+}
+
+<<<<<<< HEAD
+/*nav*/
+#csunnav {
+    width: 100%;
+    background-color: #710100;
+    display: none;
+}
+#csunnav>.container{
+  height: 100%;
+  background-color: #990000;
+  margin: none;
+  padding: none;
+}
+.nav ul{
+  height: 100%;
+}
+.nav li { 
+  height: 100%;
+  display: inline-block; 
+  border-right: 1px solid #ffffff;
+}
+
+.nav>li>a {
+  height: 100%;
+  vertical-align: middle;
+}
+.nav li:last-child  { border: 0; 
+=======
+
+.breadcrumb {
+  font-size: 24px;
+  color: #990000;
+  background-color: transparent;
+  display: block;
+  margin-top: 20px;
+}
+
+.breadcrumb > span {
+  color: #848484;
+}
+
+.dept-container{
+  padding: 0;
+}
+
+.dept-item {
+  height: 40px;
+  border: solid 1px #cacaca;
+  padding: 2px 5px 2px 10px;
+  overflow: hidden;
+}
+
+.dept-item > a {
+  display: inline;
+  max-width: 90%;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 32px;
+  font-size: 12px;
+  color: #727272;
+}
+
+.landing-box {
+  margin-bottom: 16px;
+}
+.landing-item {
+  padding: 0px 2px 0px 2px;
+}
+.land-bg{
+  max-width: 100%;
+}
+.land-head{
+  color: #1e1e1e;
+  font-family: museo, helvetica, arial, sans-serif;
+}
+
+.landing-over {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+.landing-over > img {
+  display: block;
+  max-width: 45%;
+  margin: auto;
+}
+
+.landing-over > h4 {
+  text-align: center;
+}
+
+.landing-over > span {
+  color: #727272;
+  display: block;
+  text-align: center;
+>>>>>>> origin/Safety-Branch
+}
+
+.section-content {
+  padding: 0px 20px 10px 20px;
+  margin-bottom: 20px;
+}
+
+<<<<<<< HEAD
+.nav>li>a:hover {
+  background-color: #710100;
+}
+
+
+#quicklinks{
+  margin-top: 10px;
+=======
+.section-title {
+  display: block;
+  width: 100%;
+  padding-bottom: 6px;
+  border-bottom: solid 4px #cecfd1;
+  margin-bottom: 10px;
+}
+
+.section-title h3 {
+  display: inline;
+  color: #990000;
+;
+}
+
+.section-title span {
+  display: inline;
+  padding-bottom: 8px;
+  min-width: 10%;
+  max-width: 90%;
+  height: 100%;
+  border-bottom: solid 4px #990000
+
+}
+
+
+
+@media (max-width: 767px) { /*Rules that apply only to xs size*/
+  #csunnav {
+  position: absolute;
+  top: 68px;
+>>>>>>> origin/Safety-Branch
+  width: 100%;
+  background-color: #181818;
+  z-index: 20;
+}
+
+#csunsearch {
+  position: absolute;
+  top: 68px;
+  width: 100%;
+  height: 50px;
+  background-color: #181818;
+  z-index: 20;    
+  }
+
+.hideme {
+  display: none;
+}
+
+.showme {
+  display: block;
+}
+
+/* 7 - Inner Page*/
+
+<<<<<<< HEAD
+}
+#quicklinks>ul>li>a:hover {
   background-color: none;
 }
 
@@ -158,60 +503,217 @@ a:hover{
   background-color: #c0c1c3;
   border: 1px solid;
   border-color: #4e4e4e;
+=======
+.breadcrumb {
+  display: block;
+  margin-top: 20px;
+  background-color: transparent;
+  font-size: 16px;
 }
 
-.content{
-  padding-left: 10px;
-  padding-right: 10px;
+.landing-box {
+  display: none;
 }
 
+.landing-over > h4 {
+  font-size: 14px;
+}
+
+.landing-over > span {
+  display: none;
+>>>>>>> origin/Safety-Branch
+}
+
+}
+
+<<<<<<< HEAD
 @media (min-width: 768px) { /*small media size*/
+=======
+
+
+
+/*== END XS =======================*/
+
+/*SMALL MEDIA SIZE =================================================================================================================*/
+
+@media (min-width: 768px) { 
+
+/* 1 - Overall*/
+>>>>>>> origin/Safety-Branch
 
   #headerbar{
     display: block;
     height: 100px;
-}
-  #mininav{
-    display: none;
-}
+  }
+
 
   #fixbar{
     background-color: #ffffff;
     height: 145px;
   }
+<<<<<<< HEAD
   #csunnav {
     display: inline-block;
     height: 45px;
   }
+=======
+
+>>>>>>> origin/Safety-Branch
   .iconblock{
     display: none;
   }
 
+<<<<<<< HEAD
   .mainbanner {
     height: 240px;
     margin-top: 145px;
   }
 
 }
+=======
+/* 2 - nav */
 
-@media (min-width: 992px) { /*medium media size*/
+  #mininav{
+    display: none;
+  }
+
+  #csunnav {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #710100;
+    padding: 0;
+  }
+
+
+  #csunnav > .container{
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #990000;
+  }
+
+  .nav {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: auto;
+    float: none;
+    text-align: center;
+    
+  }
+
+  .nav li { 
+    display: inline-block;
+    height: 100%;
+  }
+
+  .nav li:hover { 
+    background-color: #1e1e1e; 
+  }
+
+  .nav > li > a {
+    display: inline-block;
+    height: 30px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+    padding: 0px 22px 0px 22px;
+    margin-top: 10px;
+    border-right: 1px solid #ffffff;
+  }
+
+  .nav  li:last-child > a {
+    border: 0;
+ 
+  }
+
+  .nav > li > a:hover {
+    background-color: #1e1e1e;
+  }
+
+
+
+/* 3 - Quicklinks Rules  */
+
+/* 4 - Search Bar Rules  */
+
+  
+
+
+/*5 - Banner Rules*/
+
+  .mainbanner {
+    margin-top: 145px;
+    padding: 0px 15px 0px 15px;
+  }
+
+/*6 - Footer Rules*/
+
+  .footbox {
+    min-height: 100%;
+    height: 100%;
+    width: 50%;
+    display: block;
+    float: left;
+  }
+
+  .footbox > a {
+    text-align: left;
+  }
+
+  .footbox > span {
+    text-align: left;
+  }
+
+/* 7 - Inner Page Rules */
+
+.landing-over > img {
+  max-width: 65%;
+}
+
+.landing-over > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing-over > span {
+  display: none;
+}
+
+
+
+} /*== END SM =======================*/
+
+/*medium media size ===================================================================================================================*/
+
+@media (min-width: 992px) {
+>>>>>>> origin/Safety-Branch
+
+/* 1 - Overall Rules */ 
 
   #headerbar{
     display: block;
     height: 100px;
-}
-  #mininav{
-    display: none;
-}
+  }
+
+
 
   #fixbar{
     background-color: #ffffff;
     height: 145px;
   }
+<<<<<<< HEAD
   #csunnav {
     display: inline-block;
     height: 45px;
   }
+=======
+
+
+>>>>>>> origin/Safety-Branch
   .iconblock{
     display: none;
   }
@@ -221,44 +723,253 @@ a:hover{
     margin-top: 145px;
   }
 
+<<<<<<< HEAD
+=======
+/* 2 - Nav Rules*/
 
+  #mininav{
+    display: none;
+  }
+
+  #csunnav {
+    display: block;
+  }
+
+  .nav > li > a {
+    font-size: 16px;
+    padding: 0px 35px 0px 35px;
+  }
+
+
+/* 3 - Rules*/
+
+/* 4 - Rules*/
+
+/* 5 - Rules*/
+>>>>>>> origin/Safety-Branch
+
+/* 6 - Footer Rules*/
+
+  .btnbox{
+    width: 424px;
+    margin: auto;
+  }
+
+/* 7 - Inner Page Rules*/
+
+.landing-over > img {
+  max-width: 45%;
 }
 
-@media (min-width: 1200px){ /*large media size*/
+.landing-over > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.landing-over > span {
+  display: block;
+  font-size: 14px;
+}
+
+} /*== END MD =======================*/
+
+/* Large Media Size ==================================================================================================================*/
+
+@media (min-width: 1200px){
+
+/* 1 - Overall Rules */
 
   #headerbar{
     display: block;
     height: 140px;
-}
-  #mininav{
-    display: none;
-}
+  }
+
   #fixbar{
     background-color: #ffffff;
+<<<<<<< HEAD
     height: 200px;
   }
   #csunnav {
     display: inline-block;
     height: 60px;
+=======
+    height: 195px;
+>>>>>>> origin/Safety-Branch
   }
+
   .iconblock{
     display: none;
   }
 
+<<<<<<< HEAD
   .mainbanner {
     height: 365px;
     margin-top: 200px;
   }
+=======
+
+  #logo{
+  margin-top: 55px;
+  }
+
+/* 2 - Nav Rules */
+
+  #mininav{
+    display: none;
+  }
+
+  #csunnav {
+    height: 55px;
+  }
+
+
+  .nav > li > a {
+    line-height: 32px;
+    padding: 0px 48px 0px 48px;
+  }
+
+
+/* 3 - Quicklinks Rules*/
+
+  #quicklinks{
+    margin-top: 20px;
+    display: none;
+  }
+
+  #quicklinks-lg{
+    display: inline-block;
+   margin-top: 30px;
+    width: 100%;
+  }
+
+  #quicklinks-lg>ul>li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #181818;
+
+  }
+
+  #quicklinks-lg>ul>li:last-child{
+    padding-right: 0px;
+    border: 0;
+  }
+
+  #quicklinks-lg>ul>li>a {
+
+  color: #990000;
+
+
+  }
+
+  #quicklinks-lg>ul>li>a:hover {
+  background-color: transparent;
+  }
+
+/* 4 - Search Bar Rules*/
+
+/* 5 - Banner Rules*/
+
+  .mainbanner {
+    margin-top: 195px;
+  }
+
+/* 6 - Footer Rules*/
+
+/* 7 - Inner Page Rules*/
+
+.landing-over {
+  padding: 20px 25px 20px 25px;
+>>>>>>> origin/Safety-Branch
+}
+
+.landing-over > img {
+  max-width: 45%;
+}
+
+.landing-over > h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.landing-over > span {
+  display: block;
+  font-size: 16px;
 }
 
 
+} /*== END LG =======================*/
 
 
-/*general purpose stuff*/
+
+
+
+
+/*Miscellaneous Stuff ===================================================================================================================*/
 
 .right{
   float: right;
 }
+
 .left{
   float: left;
+<<<<<<< HEAD
 }
+=======
+}
+
+.red{
+  color: #990000;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+/*Triangles*/
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 0; 
+  height: 0; 
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;  
+  border-top: 8px solid #aaaaaa;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.arrow-down:hover {
+  border-top: 8px solid #990000;
+  cursor: pointer;
+}
+
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  
+  border-left: 60px solid green;
+}
+
+.arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;  
+  border-right:10px solid blue; 
+}
+
+
+>>>>>>> origin/Safety-Branch
