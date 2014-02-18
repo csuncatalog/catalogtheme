@@ -44,7 +44,6 @@ a:hover{
 }
 
 #fixbar{
-  top:0px;
   position: fixed;
   width: 100%;
   height: 68px;
@@ -60,19 +59,8 @@ a:hover{
   margin-bottom: -120px;
   padding: 0px 0px 120px 0px;
   background-color: #ffffff;
-  margin-top:-32px;
 }
 
-<<<<<<< HEAD
-#footer {
-  height: 120px;
-  background-color: #1e1e1e;
-}
-
-#logo{
-  margin-top: 25px;
-  width: 175px;
-=======
 #logo{
   margin-top: 25px;
   width: 175px;
@@ -280,7 +268,6 @@ a:hover{
 
 #catalog-subnav ul{
   padding-left: 0;
->>>>>>> origin/Safety-Branch
 }
 
 #catalog-subnav ul li {
@@ -318,34 +305,6 @@ a:hover{
   height: 100%;
 }
 
-<<<<<<< HEAD
-/*nav*/
-#csunnav {
-    width: 100%;
-    background-color: #710100;
-    display: none;
-}
-#csunnav>.container{
-  height: 100%;
-  background-color: #990000;
-  margin: none;
-  padding: none;
-}
-.nav ul{
-  height: 100%;
-}
-.nav li { 
-  height: 100%;
-  display: inline-block; 
-  border-right: 1px solid #ffffff;
-}
-
-.nav>li>a {
-  height: 100%;
-  vertical-align: middle;
-}
-.nav li:last-child  { border: 0; 
-=======
 
 .breadcrumb {
   font-size: 24px;
@@ -416,7 +375,6 @@ a:hover{
   color: #727272;
   display: block;
   text-align: center;
->>>>>>> origin/Safety-Branch
 }
 
 .section-content {
@@ -424,15 +382,6 @@ a:hover{
   margin-bottom: 20px;
 }
 
-<<<<<<< HEAD
-.nav>li>a:hover {
-  background-color: #710100;
-}
-
-
-#quicklinks{
-  margin-top: 10px;
-=======
 .section-title {
   display: block;
   width: 100%;
@@ -463,7 +412,6 @@ a:hover{
   #csunnav {
   position: absolute;
   top: 68px;
->>>>>>> origin/Safety-Branch
   width: 100%;
   background-color: #181818;
   z-index: 20;
@@ -488,22 +436,6 @@ a:hover{
 
 /* 7 - Inner Page*/
 
-<<<<<<< HEAD
-}
-#quicklinks>ul>li>a:hover {
-  background-color: none;
-}
-
-/*banners*/
-.mainbanner {
-  display: block;
-  width: 100%;
-  height: 120px;
-  margin-top: 68px;
-  background-color: #c0c1c3;
-  border: 1px solid;
-  border-color: #4e4e4e;
-=======
 .breadcrumb {
   display: block;
   margin-top: 20px;
@@ -521,14 +453,10 @@ a:hover{
 
 .landing-over > span {
   display: none;
->>>>>>> origin/Safety-Branch
 }
 
 }
 
-<<<<<<< HEAD
-@media (min-width: 768px) { /*small media size*/
-=======
 
 
 
@@ -539,7 +467,6 @@ a:hover{
 @media (min-width: 768px) { 
 
 /* 1 - Overall*/
->>>>>>> origin/Safety-Branch
 
   #headerbar{
     display: block;
@@ -551,26 +478,11 @@ a:hover{
     background-color: #ffffff;
     height: 145px;
   }
-<<<<<<< HEAD
-  #csunnav {
-    display: inline-block;
-    height: 45px;
-  }
-=======
 
->>>>>>> origin/Safety-Branch
   .iconblock{
     display: none;
   }
 
-<<<<<<< HEAD
-  .mainbanner {
-    height: 240px;
-    margin-top: 145px;
-  }
-
-}
-=======
 /* 2 - nav */
 
   #mininav{
@@ -690,7 +602,6 @@ a:hover{
 /*medium media size ===================================================================================================================*/
 
 @media (min-width: 992px) {
->>>>>>> origin/Safety-Branch
 
 /* 1 - Overall Rules */ 
 
@@ -705,26 +616,16 @@ a:hover{
     background-color: #ffffff;
     height: 145px;
   }
-<<<<<<< HEAD
-  #csunnav {
-    display: inline-block;
-    height: 45px;
-  }
-=======
 
 
->>>>>>> origin/Safety-Branch
   .iconblock{
     display: none;
   }
 
   .mainbanner {
-    height: 270px;
     margin-top: 145px;
   }
 
-<<<<<<< HEAD
-=======
 /* 2 - Nav Rules*/
 
   #mininav{
@@ -746,7 +647,6 @@ a:hover{
 /* 4 - Rules*/
 
 /* 5 - Rules*/
->>>>>>> origin/Safety-Branch
 
 /* 6 - Footer Rules*/
 
@@ -786,27 +686,13 @@ a:hover{
 
   #fixbar{
     background-color: #ffffff;
-<<<<<<< HEAD
-    height: 200px;
-  }
-  #csunnav {
-    display: inline-block;
-    height: 60px;
-=======
     height: 195px;
->>>>>>> origin/Safety-Branch
   }
 
   .iconblock{
     display: none;
   }
 
-<<<<<<< HEAD
-  .mainbanner {
-    height: 365px;
-    margin-top: 200px;
-  }
-=======
 
   #logo{
   margin-top: 55px;
@@ -881,7 +767,6 @@ a:hover{
 
 .landing-over {
   padding: 20px 25px 20px 25px;
->>>>>>> origin/Safety-Branch
 }
 
 .landing-over > img {
@@ -908,15 +793,18 @@ a:hover{
 
 /*Miscellaneous Stuff ===================================================================================================================*/
 
+.sm-buffer{
+  display: block;
+  width:100%;
+  height: 40px;
+}
+
 .right{
   float: right;
 }
 
 .left{
   float: left;
-<<<<<<< HEAD
-}
-=======
 }
 
 .red{
@@ -970,6 +858,3 @@ a:hover{
   border-bottom: 10px solid transparent;  
   border-right:10px solid blue; 
 }
-
-
->>>>>>> origin/Safety-Branch

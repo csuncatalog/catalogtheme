@@ -37,19 +37,10 @@
   <div class="container" id="headerbar">
       <div class="row">
 
-          <div class="col-sm-6">
+          <div class="col-sm-6 col-lg-4">
             <img src="<?php bloginfo('template_directory'); ?>/img/logo.png" id="logo">
           </div>
 
-<<<<<<< HEAD
-
-          <div class="col-sm-6">
-
-            <div class="row" id="quicklinks">
-                <ul class="right">
-                    <li ><a href="#">Archives</a></li>
-                    <li ><a href="#">Quicklinks</a></li>
-=======
           <div class="col-sm-6 col-lg-8">
 
             <div class="row" id="quicklinks">
@@ -68,19 +59,15 @@
                     <li ><a href="#">People Finder</a></li>
                     <li ><a href="#">A to Z</a></li>
                     <li ><a href="#">Webmail</a></li>
->>>>>>> origin/Safety-Branch
                 </ul>
             </div>
 
             <form class="navbar-form" role="search">
-<<<<<<< HEAD
-              <div class="input-group">
-=======
               <div id="csunsearch" class="input-group ">
->>>>>>> origin/Safety-Branch
                 <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                
                 <div class="input-group-btn">
-                  <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                  <button class="btn btn-default" type="submit"><!-- <div class="arrow-left"></div> --><span class="glyphicon glyphicon-search"></span></button>
                 </div>
               </div>
             </form>
@@ -99,10 +86,7 @@
           <li ><a href="#">Courses</a></li>
           <li ><a href="#">General Education</a></li>
           <li ><a href="#">Graduate Programs</a></li>
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/Safety-Branch
       </ul>
       </div>
 
